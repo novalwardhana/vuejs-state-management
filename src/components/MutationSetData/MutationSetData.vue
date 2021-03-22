@@ -61,15 +61,15 @@ export default {
     methods: {
         setName() {
             console.log(this.name)
-            this.$store.commit("setName", this.name)
+            this.$store.dispatch("setName", this.name)
         },
         setEmail() {
             console.log(this.email)
-            this.$store.commit("setEmail", this.email)
+            this.$store.dispatch("setEmail", this.email)
         },
         setAddress() {
             console.log(this.address)
-            this.$store.commit("setAddress", this.address)
+            this.$store.dispatch("setAddress", this.address)
         }
     }
 }

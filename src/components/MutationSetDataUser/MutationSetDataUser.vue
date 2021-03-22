@@ -47,7 +47,7 @@ export default {
             }
             let url = process.env.VUE_APP_API
             axios.post(url, data).then(response => {
-                this.$store.commit("setUserData", response.data.data)
+                this.$store.dispatch("setUserData", response.data.data)
                 this.email = ""
                 this.password = ""
             }).catch(error => {

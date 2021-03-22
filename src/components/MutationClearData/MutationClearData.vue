@@ -16,16 +16,16 @@ export default {
     name: "MutationClearData",
     methods: {
         clearName() {
-            this.$store.commit("clearName")
+            this.$store.dispatch("clearName")
         },
         clearEmail() {
-            this.$store.commit("clearEmail")
+            this.$store.dispatch("clearEmail")
         },
         clearAddress() {
-            this.$store.commit("clearAddress")
+            this.$store.dispatch("clearAddress")
         },
         clearUserData() {
-            this.$store.commit("clearUserData")
+            this.$store.dispatch("clearUserData")
         },
     }
 }
